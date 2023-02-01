@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is a [persymmetric matrix][persymmetric-matrix].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-persymmetric-matrix
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-persymmetric-matrix@esm/index.mjs';
+var isPersymmetricMatrix = require( '@stdlib/assert-is-persymmetric-matrix' );
 ```
 
 #### isPersymmetricMatrix( value )
@@ -39,7 +55,7 @@ import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-i
 Tests if a value is a [persymmetric matrix][persymmetric-matrix].
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 var arr = ndarray( 'generic', [ 1, 2, 3, 1 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var bool = isPersymmetricMatrix( arr );
@@ -56,14 +72,9 @@ var bool = isPersymmetricMatrix( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
-import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-persymmetric-matrix@esm/index.mjs';
+```javascript
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var isPersymmetricMatrix = require( '@stdlib/assert-is-persymmetric-matrix' );
 
 var arr = ndarray( 'generic', [ 1, 2, 3, 1 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var out = isPersymmetricMatrix( arr );
@@ -77,10 +88,6 @@ out = isPersymmetricMatrix( {} );
 
 out = isPersymmetricMatrix( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -112,7 +119,7 @@ out = isPersymmetricMatrix( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -129,7 +136,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -176,11 +183,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-matrix-like]: https://github.com/stdlib-js/assert-is-matrix-like/tree/esm
+[@stdlib/assert/is-matrix-like]: https://github.com/stdlib-js/assert-is-matrix-like
 
-[@stdlib/assert/is-square-matrix]: https://github.com/stdlib-js/assert-is-square-matrix/tree/esm
+[@stdlib/assert/is-square-matrix]: https://github.com/stdlib-js/assert-is-square-matrix
 
-[@stdlib/assert/is-symmetric-matrix]: https://github.com/stdlib-js/assert-is-symmetric-matrix/tree/esm
+[@stdlib/assert/is-symmetric-matrix]: https://github.com/stdlib-js/assert-is-symmetric-matrix
 
 <!-- </related-links> -->
 
