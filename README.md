@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-persymmetric-matrix@esm/index.mjs';
+import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-persymmetric-matrix@v0.2.3-esm/index.mjs';
 ```
 
 #### isPersymmetricMatrix( value )
@@ -74,7 +74,7 @@ var bool = isPersymmetricMatrix( arr );
 <script type="module">
 
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
-import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-persymmetric-matrix@esm/index.mjs';
+import isPersymmetricMatrix from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-persymmetric-matrix@v0.2.3-esm/index.mjs';
 
 var arr = ndarray( 'generic', [ 1, 2, 3, 1 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var out = isPersymmetricMatrix( arr );
